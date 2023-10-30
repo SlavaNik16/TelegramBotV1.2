@@ -195,7 +195,7 @@ async def Practic(message: types.Message):
         dateEnd = datetime.strptime(date[1], '%d.%m.%Y')
         if now >= dateStart and now <= dateEnd:
             await message.answer('Вы готовы к практике, тогда переходите по ссылке!')
-            markup = In.ButtonURL(1,['Перейти'],['https://t.me/+0Y9hJclUaNI4NzAy'])
+            markup = In.ButtonURL(1,['Перейти'],['Тут ссылка на практику'])
             await message.answer('Нажимая на ссылку, вы готовы перейти в практику!!!', reply_markup=markup)
         else:
             await message.answer('Сейчас не время практики! ')
